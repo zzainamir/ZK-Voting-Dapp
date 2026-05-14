@@ -1,0 +1,18 @@
+// SPDX-License-Identifier: UNLICENSED
+
+def main(
+    private field secret,
+    field candidate
+) -> (field, field, field) {
+
+    // Enforce candidate is 0 or 1
+    assert(candidate == 0 || candidate == 1);
+
+    field eligibilityHash = secret * secret;
+    field nullifierHash = secret + 123456;
+
+    return (eligibilityHash, nullifierHash, candidate);
+}
+
+
+

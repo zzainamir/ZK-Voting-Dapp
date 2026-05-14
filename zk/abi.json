@@ -1,0 +1,30 @@
+{
+  "inputs": [
+    {
+      "name": "secret",
+      "public": false,
+      "type": "field"
+    },
+    {
+      "name": "candidate",
+      "public": true,
+      "type": "field"
+    }
+  ],
+  "output": {
+    "type": "tuple",
+    "components": {
+      "elements": [
+        {
+          "type": "field"
+        },
+        {
+          "type": "field"
+        },
+        {
+          "type": "field"
+        }
+      ]
+    }
+  }
+}

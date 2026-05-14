@@ -1,0 +1,122 @@
+* {
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #0f172a;
+  color: #e5e7eb;
+}
+
+header {
+  padding: 24px;
+  text-align: center;
+  background: #020617;
+  border-bottom: 1px solid #1e293b;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 28px;
+}
+
+header p {
+  margin-top: 8px;
+  color: #94a3b8;
+}
+
+.container {
+  max-width: 900px;
+  margin: 32px auto;
+  padding: 0 16px;
+}
+
+.card {
+  background: #020617;
+  border: 1px solid #1e293b;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 24px;
+}
+
+.card h3 {
+  margin-top: 0;
+  color: #38bdf8;
+}
+
+button {
+  background: #38bdf8;
+  color: #020617;
+  border: none;
+  padding: 10px 16px;
+  font-size: 14px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #0ea5e9;
+}
+
+button.secondary {
+  background: #334155;
+  color: #e5e7eb;
+}
+
+.info-box {
+  background: #020617;
+  border: 1px dashed #334155;
+  padding: 12px;
+  border-radius: 6px;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+pre {
+  background: #020617;
+  border: 1px solid #334155;
+  padding: 12px;
+  border-radius: 6px;
+  max-height: 250px;
+  overflow: auto;
+  font-size: 12px;
+}
+
+.results {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.result-box {
+  flex: 1;
+  background: #020617;
+  border: 1px solid #1e293b;
+  margin-right: 10px;
+  padding: 16px;
+  border-radius: 6px;
+  text-align: center;
+}
+
+.result-box:last-child {
+  margin-right: 0;
+}
+
+.result-box h4 {
+  margin: 0;
+  color: #94a3b8;
+}
+
+.result-box span {
+  font-size: 32px;
+  font-weight: bold;
+  color: #38bdf8;
+}
+

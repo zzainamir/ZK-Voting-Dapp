@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Anonymous Voting DApp</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/ethers@5.7.2/dist/ethers.umd.min.js"></script>
+</head>
+
+<body>
+
+<header>
+  <h1>Anonymous Blockchain Voting</h1>
+  <p>Privacy-Preserving Voting using Zero-Knowledge Proofs</p>
+</header>
+
+<div class="container">
+
+  <div class="card">
+    <h3>Step 1: Voter Registration</h3>
+    <button id="signupBtn">Generate Voter Secret</button>
+
+    <div class="info-box">
+      <p><strong>Voter ID:</strong> <span id="voterID">—</span></p>
+      <p><strong>Secret:</strong> <span id="voterSecret">—</span></p>
+    </div>
+  </div>
+
+  <div class="card" id="voteSection" style="display:none;">
+    <h3>Step 2: Select Candidate</h3>
+
+    <label>
+      <input type="radio" name="candidate" value="0">
+      Candidate A
+    </label>
+
+    <label>
+      <input type="radio" name="candidate" value="1">
+      Candidate B
+    </label>
+
+    <button id="generateProofBtn">Generate Zero-Knowledge Proof</button>
+  </div>
+
+  <div class="card" id="proofSection" style="display:none;">
+    <h3>Step 3: Generated Proof</h3>
+    <pre id="proofBox"></pre>
+    <button id="submitVoteBtn">Submit Vote to Blockchain</button>
+  </div>
+
+  <div class="card">
+    <h3>Voting Results</h3>
+    <button class="secondary" id="getResultsBtn">Refresh Results</button>
+
+    <div class="results">
+      <div class="result-box">
+        <h4>Candidate A</h4>
+        <span id="votesA">0</span>
+      </div>
+      <div class="result-box">
+        <h4>Candidate B</h4>
+        <span id="votesB">0</span>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<script src="./app.js"></script>
+</body>
+</html>
+
+
+
