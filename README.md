@@ -1,4 +1,4 @@
-# Blockchain-Based Anonymous Voting System (CP2)
+# Blockchain-Based Anonymous Voting System
 
 ## Overview
 
